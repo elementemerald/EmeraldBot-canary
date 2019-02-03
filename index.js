@@ -271,7 +271,7 @@ bot.on('messageDelete', (message) => {
   .addField("Guild ID: ", `${message.guild.id}`)
   .addField("Message: ", `${message.content}`)
   .setColor("#ffae00")
-  .setFooter(`ID-${member.id} | Canary v1.0.1`)
+  .setFooter(`ID-${member.id} | Canary v1.1.0`)
 
   channel.send(embed)
 })
