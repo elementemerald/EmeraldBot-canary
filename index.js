@@ -75,7 +75,7 @@ bot.on("ready", async () => {
     //     // var types = typeList[Math.floor(Math.random() * typeList.length)];
     //     bot.user.setActivity(text, {url: "https://twitch.tv/elementemerald"}, {type: "STREAMING"})
     // }, 10000); // milliseconds
-    bot.user.setActivity("on version v1.1.0! | ebc.help", {type: "PLAYING"});
+    bot.user.setActivity("version v1.1.0! | ebc.help", {url: "https://twitch.tv/elementemerald"}, {type: "STREAMING"});
 });
 
 bot.on("message", async message => {
