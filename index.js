@@ -260,21 +260,21 @@ bot.on('guildMemberAdd', (message) => {
     //.setAuthor("Message updated.")
 //})
 
-bot.on('messageDelete', (message) => {
-  // let guild = bot.guilds.get("288448406806986752")
-  let channel = bot.channels.get("541103926985097219")
-  let member = message
-  let embed = new Discord.RichEmbed()
+// bot.on('messageDelete', (message) => {
+//   // let guild = bot.guilds.get("288448406806986752")
+//   let channel = bot.channels.get("541103926985097219")
+//   let member = message
+//   let embed = new Discord.RichEmbed()
 
-  .setTitle("Message deleted")
-  .addField("User: ", `${message.author}`)
-  .addField("Guild ID: ", `${message.guild.id}`)
-  .addField("Message: ", `${message.content}`)
-  .setColor("#ffae00")
-  .setFooter(`ID-${member.id} | Canary v1.1.0`)
+//   .setTitle("Message deleted")
+//   .addField("User: ", `${message.author}`)
+//   .addField("Guild ID: ", `${message.guild.id}`)
+//   .addField("Message: ", `${message.content}`)
+//   .setColor("#ffae00")
+//   .setFooter(`ID-${member.id} | Canary v1.1.0`)
 
-  channel.send(embed)
-})
+//   channel.send(embed)
+// })
 
 // bot.on('messageUpdate', (oldMessage, newMessage, message) => {
 //   let guild = bot.guilds.get("288448406806986752")
