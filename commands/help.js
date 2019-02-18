@@ -1,16 +1,19 @@
 const Discord = require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
+    message.react(`✅`)
 
     let helpembed = new Discord.RichEmbed()
-    .setDescription("Canary Help Menu")
+    .setDescription("Help Menu")
     .setColor("#4cea41")
-    .addField("Member Commands", "help, serverinfo, report, ping")
-    .addField("Mod Commands", "kick, warn, ban, mute, unmute")
+    .addField("Member Commands", "help, serverinfo, report, ping, getmembers")
+    .addField("Mod Commands", "kick, warn, ban, mute, unmute, purge, reload")
+    .addField("Founder Commands", "eval")
     .addField("Fun Commands", "8ball")
-    .addField("Voice Channel Commands", "play (WIP), disconnect")
+    .addField("Reddit Commands", "cursedimage")
+    .addField("Voice Channel Commands", "play (WIP), search, disconnect, queue, skip, volume, pause, resume, stop")
 
-    message.channel.send(helpembed);
+    message.author.send(helpembed);
 }
 
 module.exports.help = {
